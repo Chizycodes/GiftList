@@ -17,7 +17,6 @@ app.post('/gift', (req, res) => {
 	// TODO: prove that a name is in the list
 
 	const isInTheList = verifyProof(proof, leaf, root);
-	console.log(isInTheList, 'isInTheList');
 
 	if (isInTheList) {
 		res.send('You got a toy robot!');
